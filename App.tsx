@@ -23,6 +23,7 @@ import {
 import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
+import PokemonList from './views/PokemonList';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -33,9 +34,9 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      
       <Text style={styles.title}>Pokédex</Text>
       <Text style={styles.subtitle}>Search for Pokémon by name or using the National Pokédex number.</Text>
+      <PokemonList />
     </SafeAreaView>
   );
 };
@@ -57,6 +58,7 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     paddingHorizontal: 40,
     paddingTop: 10,
+    marginBottom: 20,
     color: "#747476FF"
   }
 });
