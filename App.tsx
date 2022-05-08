@@ -33,6 +33,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
+      
       <Text style={styles.title}>Pokédex</Text>
       <Text style={styles.subtitle}>Search for Pokémon by name or using the National Pokédex number.</Text>
     </SafeAreaView>
